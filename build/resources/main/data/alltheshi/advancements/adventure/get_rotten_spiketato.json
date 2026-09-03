@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "alltheshi:rotten_spiketato"
+    },
+    "title": "Eww, stinky!",
+    "description": "Acquire a Rotten Spiketato"
+  },
+  "criteria": {
+    "craft_rotten_spiketato": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "alltheshi:rotten_spiketato"
+      }
+    },
+    "get_rotten_spiketato": {
+      "trigger": "minecraft:inventory_changed",
+      "items": [{"items": "alltheshi:rotten_spiketato"}]
+    }
+  },
+  "requirements": [
+    ["craft_rotten_spiketato"],
+    ["get_rotten_spiketato"]
+  ]
+}

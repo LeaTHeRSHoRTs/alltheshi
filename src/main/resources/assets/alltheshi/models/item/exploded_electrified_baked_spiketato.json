@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "alltheshi:item/exploded_electrified_baked_spiketato"
+  }
+}

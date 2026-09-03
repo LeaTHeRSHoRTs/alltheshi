@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RSR",
+    "RRR"
+  ],
+  "key": {
+    "R": { "item": "minecraft:rotten_flesh" },
+    "S": { "item": "alltheshi:spiketato" }
+  },
+  "result": {
+    "item": "alltheshi:rotten_spiketato",
+    "count": 1
+  }
+}

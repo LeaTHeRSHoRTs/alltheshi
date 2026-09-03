@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: alltheshi
+Specification-Vendor: LeaTHeR_SHoRTs, codyiscod
+Specification-Version: 1
+Implementation-Title: alltheshi
+Implementation-Version: 1.1.0
+Implementation-Vendor: LeaTHeR_SHoRTs, codyiscod
+Implementation-Timestamp: 2026-08-20T10:28:33+1200
+

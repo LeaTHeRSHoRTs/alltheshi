@@ -1,0 +1,7 @@
+{
+  "exhaustion": 0.2,
+  "message_id": "bleeding",
+  "scaling": "always",
+  "effects": "hurt",
+  "death_message_type": "default"
+}

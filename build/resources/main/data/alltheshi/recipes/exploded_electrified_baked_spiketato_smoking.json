@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": { "item": "alltheshi:spiketato" },
+  "result": "alltheshi:exploded_electrified_baked_spiketato",
+  "experience": 0,
+  "cookingtime": 20
+}

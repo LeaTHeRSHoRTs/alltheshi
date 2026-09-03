@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "alltheshi:spiketato"
+    },
+    "title": "That's a pretty spiky potato you got there...",
+    "description": "Acquire a Spiketato",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_spiketato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alltheshi:spiketato"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_spiketato"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOO",
+    "OTO",
+    "OOO"
+  ],
+  "key": {
+    "O": { "item": "minecraft:crying_obsidian" },
+    "T": { "item": "minecraft:totem_of_undying" }
+  },
+  "result": {
+    "item": "alltheshi:totem_of_dying",
+    "count": 1
+  }
+}

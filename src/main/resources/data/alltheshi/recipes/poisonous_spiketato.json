@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RSR",
+    "RRR"
+  ],
+  "key": {
+    "R": { "item": "minecraft:iron" },
+    "S": { "item": "minecraft:poisonous_potato" }
+  },
+  "result": {
+    "item": "alltheshi:poisonous_spiketato",
+    "count": 1
+  }
+}

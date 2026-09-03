@@ -1,0 +1,19 @@
+{
+  "itemGroup.alltheshi_tab": "All The Shi",
+  "item.alltheshi.spiketato": "Spiketato",
+  "item.alltheshi.rotten_spiketato": "Rotten Spiketato",
+  "item.alltheshi.poisonous_spiketato": "Poisonous Spiketato",
+  "item.alltheshi.exploded_electrified_baked_spiketato": "Exploded Electrified Baked Spiketato",
+  "death.attack.explode_die": "%1$s was exploded by a Rotten Spiketato",
+  "death.attack.bleeding": "%1$s bled out",
+  "death.attack.spiked": "%1$s was spiked to death by a rotten spiketato thrown by %2$s",
+  "effect.alltheshi.bleeding": "Bleeding",
+
+  "item.alltheshi.totem_of_dying": "Totem of Dying",
+  "death.attack.totem_harm": "%1$s touched a the Totem of Dying too much",
+  "death.attack.totem_harm_once": "%1$s equipped a Totem of Dying and died",
+
+  "item.alltheshi.shaddle": "Shaddle",
+
+  "item.alltheshi.scary_scale": "Scary Scale"
+}

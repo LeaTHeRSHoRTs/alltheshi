@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "alltheshi:rotten_spiketato"
+    },
+    "title": "How are you still alive?",
+    "description": "Survive a Rotten Spiketato"
+  },
+  "criteria": {
+    "hit_and_not_die": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "blocked": false,
+          "taken": {
+            "min": 1
+          },
+          "type": {
+            "tags": [
+              {
+                "id": "alltheshi:explode_die",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

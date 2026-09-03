@@ -1,0 +1,139 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 2026-07-19 17:36:53
+Description: Ticking player
+
+java.lang.IllegalArgumentException: Unknown DamageType registry key: alltheshi:totem_harm.once
+	at utils.global.alltheshi.com.codyiscod.leathershorts.DamageUtils.lambda$getDamageType$0(DamageUtils.java:40) ~[%23196!/:?] {re:classloading}
+	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?] {}
+	at utils.global.alltheshi.com.codyiscod.leathershorts.DamageUtils.getDamageType(DamageUtils.java:40) ~[%23196!/:?] {re:classloading}
+	at utils.global.alltheshi.com.codyiscod.leathershorts.DamageUtils.getDamageSource(DamageUtils.java:60) ~[%23196!/:?] {re:classloading}
+	at items.totemofdying.alltheshi.com.codyiscod.leathershorts.TotemOfDying.dealTouchDamage(TotemOfDying.java:36) ~[%23196!/:?] {re:classloading}
+	at items.totemofdying.alltheshi.com.codyiscod.leathershorts.TotemOfDying.onInventoryTick(TotemOfDying.java:48) ~[%23196!/:?] {re:classloading}
+	at net.minecraftforge.common.extensions.IForgeItemStack.onInventoryTick(IForgeItemStack.java:306) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23190%23197!/:?] {re:computing_frames,re:classloading}
+	at net.minecraft.world.entity.player.Inventory.tick(Inventory.java:257) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.aiStep(Player.java:525) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2440) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:245) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:489) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:267) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.Connection.tick(Connection.java:289) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:159) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:950) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:857) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:95) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:679) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Suspected Mod: 
+	All The Shi* (alltheshi), Version: 1.0-SNAPSHOT
+		at TRANSFORMER/alltheshi@1.0-SNAPSHOT/utils.global.alltheshi.com.codyiscod.leathershorts.DamageUtils.lambda$getDamageType$0(DamageUtils.java:40)
+Stacktrace:
+	at utils.global.alltheshi.com.codyiscod.leathershorts.DamageUtils.lambda$getDamageType$0(DamageUtils.java:40) ~[%23196!/:?] {re:classloading}
+	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?] {}
+	at utils.global.alltheshi.com.codyiscod.leathershorts.DamageUtils.getDamageType(DamageUtils.java:40) ~[%23196!/:?] {re:classloading}
+	at utils.global.alltheshi.com.codyiscod.leathershorts.DamageUtils.getDamageSource(DamageUtils.java:60) ~[%23196!/:?] {re:classloading}
+	at items.totemofdying.alltheshi.com.codyiscod.leathershorts.TotemOfDying.dealTouchDamage(TotemOfDying.java:36) ~[%23196!/:?] {re:classloading}
+	at items.totemofdying.alltheshi.com.codyiscod.leathershorts.TotemOfDying.onInventoryTick(TotemOfDying.java:48) ~[%23196!/:?] {re:classloading}
+	at net.minecraftforge.common.extensions.IForgeItemStack.onInventoryTick(IForgeItemStack.java:306) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23190%23197!/:?] {re:computing_frames,re:classloading}
+	at net.minecraft.world.entity.player.Inventory.tick(Inventory.java:257) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.aiStep(Player.java:525) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2440) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:245) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.server.level.ServerPlayer)
+	Entity ID: 85
+	Entity Name: Dev
+	Entity's Exact location: -1.50, 0.00, 7.02
+	Entity's Block location: World: (-2,0,7), Section: (at 14,0,7 in -1,0,0; chunk contains blocks -16,-64,0 to -1,319,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:489) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:267) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.network.Connection.tick(Connection.java:289) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:159) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:950) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:857) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:95) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:679) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.19, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Microsoft
+	Memory: 1008959928 bytes (962 MiB) / 1667235840 bytes (1590 MiB) up to 1946157056 bytes (1856 MiB)
+	CPUs: 8
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 5 7520U with Radeon Graphics         
+	Identifier: AuthenticAMD Family 23 Model 160 Stepping 0
+	Microarchitecture: unknown
+	Frequency (GHz): 2.80
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 512.00
+	Graphics card #0 deviceId: 0x1506
+	Graphics card #0 versionInfo: DriverVersion=32.0.21039.2003
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 5.50
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 5.50
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 24682.18
+	Virtual memory used (MB): 23473.94
+	Swap memory total (MB): 17263.80
+	Swap memory used (MB): 3361.45
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/85, l='ServerLevel[New World]', x=-1.50, y=0.00, z=7.02]]
+	Data Packs: vanilla, mod:forge, mod:alltheshi
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.2.33.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.20.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.20.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.20.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.20.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.20.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.20.1-47.4.20_mapped_parchment_2023.09.03-1|Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |47.4.20             |DONE      |Manifest: NOSIGNATURE
+		main                                              |All The Shi*                  |alltheshi                     |1.0-SNAPSHOT        |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: e8d32049-e6fc-4bce-876b-119180e246cb
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.20
