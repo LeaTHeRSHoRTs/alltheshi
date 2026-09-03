@@ -23,5 +23,6 @@
 hs_err_pid*
 replay_pid*
 
-# Run folder
+# Run folder and .idea
 /run
+/.idea
