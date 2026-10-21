@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "alltheshi:totem_of_dying"
+    },
+    "title": "The Darkest of Totems",
+    "description": "Fabricate a Totem of Dying in the mortal realm",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "create_totem": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "alltheshi:totem_of_dying"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "create_totem"
+    ]
+  ]
+}

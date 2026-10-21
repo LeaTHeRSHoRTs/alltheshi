@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "alltheshi:exploded_electrified_baked_spiketato"
+    },
+    "title": "What the f**k is this?",
+    "description": "Grab a Exploded Electrified Baked Spiketato",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cook_spiketato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alltheshi:exploded_electrified_baked_spiketato"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cook_spiketato"
+    ]
+  ]
+}

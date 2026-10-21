@@ -49,9 +49,9 @@ public final class AllTheShi {
         // Production
         this.setupModule(SpiketatoEntrypoint::new, true);
         this.setupModule(TotemOfDyingEntrypoint::new, true);
-        this.setupModule(DfiamondEntrypoint::new, true);
 
         // Beta / Unstable
+        this.setupModule(DfiamondEntrypoint::new, true);
         this.setupModule(ScaryScaleEntrypoint::new, false);
         this.setupModule(MagicStickEntrypoint::new, false);
         this.setupModule(ShaddleEntrypoint::new, false);

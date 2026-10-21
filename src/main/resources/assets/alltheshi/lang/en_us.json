@@ -5,6 +5,7 @@
   "item.alltheshi.poisonous_spiketato": "Poisonous Spiketato",
   "item.alltheshi.exploded_electrified_baked_spiketato": "Exploded Electrified Baked Spiketato",
   "death.attack.explode_die": "%1$s was exploded by a Rotten Spiketato",
+  "death.attack.explode_die.player": "%1$s was exploded by a Rotten Spiketato",
   "death.attack.bleeding": "%1$s bled out",
   "death.attack.spiked": "%1$s was spiked to death by a rotten spiketato thrown by %2$s",
   "effect.alltheshi.bleeding": "Bleeding",

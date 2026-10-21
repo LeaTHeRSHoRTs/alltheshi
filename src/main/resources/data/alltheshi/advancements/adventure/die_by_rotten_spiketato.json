@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "alltheshi:exploded_electrified_baked_spiketato"
+    },
+    "title": "All actions have consequences",
+    "description": "Die after eating a rotten spiketato and taking damage from anything other than bleeding",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "explode_die": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "killing_blow": {
+          "tags": [
+            {
+              "id": "alltheshi:explode_die",
+              "expected": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "explode_die"
+    ]
+  ]
+}

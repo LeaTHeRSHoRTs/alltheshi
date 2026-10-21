@@ -4,7 +4,7 @@
       "item": "alltheshi:rotten_spiketato"
     },
     "title": "How are you still alive?",
-    "description": "Survive a Rotten Spiketato"
+    "description": "Survive a Rotten Spiketato's effect"
   },
   "criteria": {
     "hit_and_not_die": {
