@@ -26,3 +26,6 @@ replay_pid*
 # Run folder and .idea
 /run
 /.idea
+
+# Gradle
+/.gradle
