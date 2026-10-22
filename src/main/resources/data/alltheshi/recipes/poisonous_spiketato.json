@@ -6,7 +6,7 @@
     "RRR"
   ],
   "key": {
-    "R": { "item": "minecraft:iron" },
+    "R": { "item": "minecraft:iron_ingot" },
     "S": { "item": "minecraft:poisonous_potato" }
   },
   "result": {
