@@ -1,20 +1,43 @@
 {
   "itemGroup.alltheshi_tab": "All The Shi",
+
   "item.alltheshi.spiketato": "Spiketato",
   "item.alltheshi.rotten_spiketato": "Rotten Spiketato",
   "item.alltheshi.poisonous_spiketato": "Poisonous Spiketato",
   "item.alltheshi.exploded_electrified_baked_spiketato": "Exploded Electrified Baked Spiketato",
+
   "death.attack.explode_die": "%1$s was exploded by a Rotten Spiketato",
   "death.attack.explode_die.player": "%1$s was exploded by a Rotten Spiketato",
   "death.attack.bleeding": "%1$s bled out",
+  "death.attack.bleeding.player": "%1$s bled out",
   "death.attack.spiked": "%1$s was spiked to death by a rotten spiketato thrown by %2$s",
+  "death.attack.spiked.player": "%1$s was spiked to death by a rotten spiketato thrown by %2$s",
+
   "effect.alltheshi.bleeding": "Bleeding",
 
+
   "item.alltheshi.totem_of_dying": "Totem of Dying",
+  "item.alltheshi.death_chicken": "Death Chicken",
+  "item.alltheshi.death_beef": "Death Beef",
+  "item.alltheshi.death_mutton": "Death Mutton",
+  "item.alltheshi.death_porkchop": "Death Porkchop",
+  "item.alltheshi.death_rabbit": "Death Rabbit",
+  "item.alltheshi.cooked_death_chicken": "Cooked Death Chicken",
+  "item.alltheshi.cooked_death_beef": "Cooked Death Beef",
+  "item.alltheshi.cooked_death_mutton": "Cooked Death Mutton",
+  "item.alltheshi.cooked_death_porkchop": "Cooked Death Porkchop",
+  "item.alltheshi.cooked_death_rabbit": "Cooked Death Rabbit",
+
   "death.attack.totem_harm": "%1$s touched a the Totem of Dying too much",
+  "death.attack.totem_harm.player": "%1$s touched a the Totem of Dying too much",
   "death.attack.totem_harm_once": "%1$s equipped a Totem of Dying and died",
+  "death.attack.totem_harm_once.player": "%1$s equipped a Totem of Dying and died",
+  "death.attack.death_meat_harm": "%1$s was killed after consuming §4D3§kX0R§r",
+  "death.attack.death_meat_harm.player": "%1$s was killed after consuming §4D3§kX0R§r",
+
 
   "item.alltheshi.shaddle": "Shaddle",
+
 
   "item.alltheshi.scary_scale": "Scary Scale"
 }

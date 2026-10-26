@@ -1,12 +1,6 @@
 package com.codyiscod.leathershorts.alltheshi.totemofdying.items;
 
-import net.minecraft.client.resources.sounds.Sound;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
@@ -14,28 +8,25 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
-public abstract class DeathMeat extends Item {
-    public DeathMeat() {
-        super(new Item.Properties()
-            .food(new FoodProperties.Builder()
-                .meat()
-                .nutrition(2)
-                .saturationMod(0)
-                .build()
-            )
-        );
+public final class DeathMeat extends Item {
+    private final int hungerReduced;
+    private final float saturationReduced;
+
+    public DeathMeat(int hunger, float saturation) {
+        super(new Item.Properties().food(new FoodProperties.Builder().meat().build()));
+        this.saturationReduced = saturation;
+        this.hungerReduced = hunger;
     }
 
-    abstract SoundEvent getSound();
-
     @Override
-    public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, @NotNull Player player, @NotNull InteractionHand usedHand) {
-        player.addEffect(new MobEffectInstance(
-            MobEffects.BLINDNESS,
-            100,
-            2
-        ));
-        level.playSound(player, player.getOnPos(), this.getSound(), SoundSource.AMBIENT);
-        return super.use(level, player, usedHand);
+    public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity entity) {
+        ItemStack result = super.finishUsingItem(stack, level, entity);
+
+        if (entity instanceof Player player && !level.isClientSide) {
+            player.getFoodData().setFoodLevel(Math.max(0, player.getFoodData().getFoodLevel() - this.hungerReduced));
+            player.getFoodData().setSaturation(Math.max(0.0F, player.getFoodData().getSaturationLevel() - this.saturationReduced));
+        }
+
+        return result;
     }
 }

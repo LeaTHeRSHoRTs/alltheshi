@@ -37,7 +37,7 @@ public final class RottenSpiketato extends Spiketato {
                 MobEffectInstance.INFINITE_DURATION,
                 0,
                 false,
-                false,
+                true,
                 false
             ), new MobEffectInstance(
             MobEffects.CONFUSION,

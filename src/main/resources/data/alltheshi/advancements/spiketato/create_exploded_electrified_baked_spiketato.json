@@ -1,4 +1,5 @@
 {
+  "parent": "alltheshi:spiketato/get_spiketato",
   "display": {
     "icon": {
       "item": "alltheshi:exploded_electrified_baked_spiketato"

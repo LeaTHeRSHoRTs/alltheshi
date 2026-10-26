@@ -3,8 +3,11 @@ package com.codyiscod.leathershorts.alltheshi.spiketato.effects;
 import com.codyiscod.leathershorts.alltheshi.spiketato.SpiketatoDamageTypes;
 import com.codyiscod.leathershorts.alltheshi.spiketato.SpiketatoEffects;
 import com.codyiscod.leathershorts.alltheshi.global.utils.DamageUtils;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.damagesource.DamageSource;
@@ -104,7 +107,7 @@ public final class ExplodeEffect extends MobEffect {
                         }
                     }
 
-                    float damage = 20.0F;
+                    float damage = player.getMaxHealth();
 
                     DamageSource customSource = DamageUtils.getDamageSource(player.level(), SpiketatoDamageTypes.EXPLODE_DIE);
 
@@ -131,9 +134,25 @@ public final class ExplodeEffect extends MobEffect {
                         }
                     }
 
+                    boolean wasAlive = player.isAlive();
+                    boolean willDie = damage > 0.0F && player.getHealth() <= damage;
+
                     if (damage > 0.0F) {
                         player.getCombatTracker().recordDamage(customSource, damage);
                         player.setHealth(player.getHealth() - damage);
+                    }
+
+                    // If the player survived all the way through, and was still alive before the damage
+                    if (wasAlive && player instanceof ServerPlayer sPlayer) {
+                        String advancementId = willDie
+                            ? "spiketato/die_by_rotten_spiketato"
+                            : "spiketato/survive_rotten_spiketato";
+                        Advancement advancement = sPlayer.server.getAdvancements()
+                            .getAdvancement(ResourceLocation.fromNamespaceAndPath("alltheshi", advancementId));
+
+                        if (advancement != null) {
+                            sPlayer.getAdvancements().award(advancement, "explode_die");
+                        }
                     }
                 }
             }

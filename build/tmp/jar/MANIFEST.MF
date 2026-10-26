@@ -3,8 +3,8 @@ Specification-Title: alltheshi
 Specification-Vendor: LeaTHeR_SHoRTs, codyiscod
 Specification-Version: 1
 Implementation-Title: alltheshi
-Implementation-Version: 1.1.0
+Implementation-Version: 2.0.0
 Implementation-Vendor: LeaTHeR_SHoRTs, codyiscod
-Implementation-Timestamp: 2026-10-22T12:11:33+1300
+Implementation-Timestamp: 2026-10-26T12:34:13+1300
 MixinConfigs: alltheshi.mixins.json
 

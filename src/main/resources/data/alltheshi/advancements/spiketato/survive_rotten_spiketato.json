@@ -1,0 +1,17 @@
+{
+  "parent": "alltheshi:spiketato/get_rotten_spiketato",
+  "display": {
+    "icon": {
+      "item": "alltheshi:rotten_spiketato"
+    },
+    "title": "How are you still alive?",
+    "description": "Survive a Rotten Spiketato's effect",
+    "hidden": true,
+    "frame": "challenge"
+  },
+  "criteria": {
+    "explode_die": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

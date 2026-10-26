@@ -8,13 +8,14 @@ import net.minecraft.world.damagesource.DamageType;
 import static com.codyiscod.leathershorts.alltheshi.AllTheShi.MOD_ID;
 
 public final class TotemOfDyingDamageTypes {
-    public static final ResourceKey<DamageType> TOTEM_HARM = ResourceKey.create(
-        Registries.DAMAGE_TYPE,
-        ResourceLocation.fromNamespaceAndPath(MOD_ID, "totem_harm")
-    );
+    public static final ResourceKey<DamageType> TOTEM_HARM = createDamageType("totem_harm");
+    public static final ResourceKey<DamageType> TOTEM_HARM_ONCE = createDamageType("totem_harm_once");
+    public static final ResourceKey<DamageType> DEATH_MEAT_HARM = createDamageType("death_meat_harm");
 
-    public static final ResourceKey<DamageType> TOTEM_HARM_ONCE = ResourceKey.create(
-        Registries.DAMAGE_TYPE,
-        ResourceLocation.fromNamespaceAndPath(MOD_ID, "totem_harm_once")
-    );
+    private static ResourceKey<DamageType> createDamageType(String name) {
+        return ResourceKey.create(
+            Registries.DAMAGE_TYPE,
+            ResourceLocation.fromNamespaceAndPath(MOD_ID, name)
+        );
+    }
 }
