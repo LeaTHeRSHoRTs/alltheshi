@@ -6,8 +6,10 @@
     },
     "title": "How are you still alive?",
     "description": "Survive a Rotten Spiketato's effect",
-    "hidden": true,
-    "frame": "challenge"
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
   },
   "criteria": {
     "explode_die": {

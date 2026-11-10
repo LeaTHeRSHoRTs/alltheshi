@@ -13,9 +13,13 @@
   },
   "criteria": {
     "create_totem": {
-      "trigger": "minecraft:recipe_crafted",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "recipe_id": "alltheshi:totem_of_dying"
+        "items": [
+          {
+            "items": ["alltheshi:totem_of_dying"]
+          }
+        ]
       }
     }
   },

@@ -1,0 +1,31 @@
+{
+  "parent": "alltheshi:totem_of_dying/make_totem_of_dying",
+  "display": {
+    "icon": {
+      "item": "alltheshi:death_chicken"
+    },
+    "title": "Deadly Delight",
+    "description": "Cook some meat a bit too much...",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "cook_meat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "alltheshi:death_meat"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cook_meat"
+    ]
+  ]
+}

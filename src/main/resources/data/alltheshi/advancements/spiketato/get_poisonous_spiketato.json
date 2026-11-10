@@ -1,0 +1,33 @@
+{
+  "parent": "alltheshi:spiketato/get_spiketato",
+  "display": {
+    "icon": {
+      "item": "alltheshi:poisonous_spiketato"
+    },
+    "title": "Poisonous AND Spiky?!",
+    "description": "Get your hands on a poisonous spiketato",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "get_rotten_spiketato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alltheshi:poisonous_spiketato"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_rotten_spiketato"
+    ]
+  ]
+}

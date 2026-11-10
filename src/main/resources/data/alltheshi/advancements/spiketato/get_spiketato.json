@@ -4,7 +4,7 @@
     "icon": {
       "item": "alltheshi:spiketato"
     },
-    "title": "That's a pretty spiky potato you got there...",
+    "title": "A little too much iron in the soil",
     "description": "Acquire a Spiketato",
     "frame": "task",
     "show_toast": true,

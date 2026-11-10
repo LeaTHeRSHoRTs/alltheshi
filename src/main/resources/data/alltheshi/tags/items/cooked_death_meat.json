@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "alltheshi:cooked_death_chicken",
+    "alltheshi:cooked_death_beef",
+    "alltheshi:cooked_death_mutton",
+    "alltheshi:cooked_death_porkchop",
+    "alltheshi:cooked_death_rabbit"
+  ]
+}

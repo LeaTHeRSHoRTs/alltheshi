@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(AbstractFurnaceBlockEntity.class)
 public final class AbstractFurnaceBlockEntityMixin {
     @Inject(
-        method = "serverTick(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/BlockState;Lnet/minecraft/world/level/block/entity/AbstractFurnaceBlockEntity;)V",
+        method = "serverTick",
         at = @At("TAIL"), remap = false
     )
     private static void onFurnaceTickEnd(Level level, BlockPos pos, BlockState state, AbstractFurnaceBlockEntity blockEntity, CallbackInfo ci) {

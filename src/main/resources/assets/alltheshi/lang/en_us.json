@@ -32,8 +32,8 @@
   "death.attack.totem_harm.player": "%1$s touched a the Totem of Dying too much",
   "death.attack.totem_harm_once": "%1$s equipped a Totem of Dying and died",
   "death.attack.totem_harm_once.player": "%1$s equipped a Totem of Dying and died",
-  "death.attack.death_meat_harm": "%1$s was killed after consuming §4D3§kX0R§r",
-  "death.attack.death_meat_harm.player": "%1$s was killed after consuming §4D3§kX0R§r",
+  "death.attack.death_meat_harm": "%1$s was killed after consuming §4§kX0RXORXORXORXOR§r",
+  "death.attack.death_meat_harm.player": "%1$s was killed after consuming §4§kX0RXORXORXORXOR§r",
 
 
   "item.alltheshi.shaddle": "Shaddle",

@@ -1,0 +1,19 @@
+{
+  "parent": "alltheshi:totem_of_dying/cook_death_meat",
+  "display": {
+    "icon": {
+      "item": "alltheshi:cooked_death_beef"
+    },
+    "title": "All actions have consequences",
+    "description": "Die after eating a rotten spiketato",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "death": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
